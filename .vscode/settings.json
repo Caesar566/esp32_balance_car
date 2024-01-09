@@ -1,0 +1,28 @@
+{
+  "C_Cpp.intelliSenseEngine": "default",
+  "idf.port": "/dev/ttyUSB0",
+  "idf.flashType": "UART",
+  "idf.adapterTargetName": "esp32",
+  "files.associations": {
+    "*.rst": "restructuredtext",
+    "test_mcpwm_utils.h": "c",
+    "mcpwm_types.h": "c",
+    "cstdint": "c",
+    "mcpwm_prelude.h": "c",
+    "mcpwm_timer.h": "c",
+    "ledc.h": "c",
+    "clk_tree_defs.h": "c",
+    "freertos.h": "c",
+    "i2c_master.h": "c",
+    "esp_log.h": "c",
+    "i2c.h": "c",
+    "i2c_types.h": "c",
+    "compare": "c",
+    "mpu6050.h": "c",
+    "stdio.h": "c",
+    "stdbool.h": "c",
+    "soc_caps.h": "c",
+    "gpio_define.h": "c"
+  },
+  "commentTranslate.targetLanguage": "en"
+}
