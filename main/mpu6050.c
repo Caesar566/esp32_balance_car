@@ -5,7 +5,7 @@
 
 
 
-void MPu6050_Init(){
+void MPU6050_Init(){
     uint8_t data[2];
     uint8_t send_data[2];
     esp32_i2c_read(DEV_ADDR, WHO_AM_I, 2, data);

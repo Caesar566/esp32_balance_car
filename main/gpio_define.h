@@ -16,10 +16,10 @@
 
 #define OUTPUT_MPU_INT 15
 #define OUTPUT_MPU_SDA 18
-#define OUTPUT_MPU_SDA 19
+#define OUTPUT_MPU_SCL 19
 
 #define OUTPUT_OLED_SDA 32
-#define OUTPUT_OLED_SDA 33
+#define OUTPUT_OLED_SCL 33
 
 
 #endif

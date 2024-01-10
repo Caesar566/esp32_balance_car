@@ -9,8 +9,8 @@
 #define ACK_VAL 0
 #define NACK_VAL 1  
 
-void I2c_Init(unsigned char sda_num, unsigned char scl_num){
-    int i2c_master_port = I2C_NUM_0;
+void I2c_Init(unsigned char sda_num, unsigned char scl_num, unsigned char i2c_num){
+    int i2c_master_port = i2c_num;
     i2c_config_t I2c_Config = {
         .mode = I2C_MODE_MASTER,
         .sda_io_num = sda_num,
@@ -22,7 +22,6 @@ void I2c_Init(unsigned char sda_num, unsigned char scl_num){
     };
     i2c_param_config(i2c_master_port, &I2c_Config);
     i2c_driver_install(i2c_master_port, I2C_MODE_MASTER, 0, 0, 0);
-
 }
 
 int esp32_i2c_write(unsigned char slave_addr, unsigned char reg_addr, unsigned char length, unsigned char const *data)

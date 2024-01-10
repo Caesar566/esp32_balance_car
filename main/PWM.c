@@ -2,7 +2,19 @@
 #include "gpio_define.h"
 #include "PWM.h"
 
+void Timer_Init(){
+    ledc_timer_config_t Ledc_Timer = {
+        .duty_resolution = LEDC_TIMER_10_BIT,
+        .freq_hz = 10000,
+        .speed_mode = LEDC_HIGH_SPEED_MODE,
+        .timer_num = LEDC_TIMER_0
+    };
+    ledc_timer_config(&Ledc_Timer);
+}
+
+
 void PWM_Init(){
+	Timer_Init();
     ledc_channel_config_t ledc_channel_l = { 
 	.channel =	LEDC_CHANNEL_0,	// LED控制器通道号, 
 	.duty = 0, 

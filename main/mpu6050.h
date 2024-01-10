@@ -54,7 +54,7 @@ typedef struct Angle
     
 } MPU6050_Angle;
 
-void MPu6050_Init();
+void MPU6050_Init();
 int16_t MPU6050_Get_Data(uint8_t regAddr, unsigned char length);
 void MPU6050_Get_Angle(MPU6050_Angle *data);
 
