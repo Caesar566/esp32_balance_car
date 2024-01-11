@@ -50,4 +50,9 @@ void MPU6050_Get_Angle(MPU6050_Angle *data)
     data->X_Angle = data->X_Angle * 57.29577;
     data->Y_Angle = data->Y_Angle * 57.29577;
     data->Z_Angle = data->Z_Angle * 57.29577;
+
+
+    data->X_GYRO = MPU6050_Get_Data(GYRO_XOUT_H, 2) * 1000 / 32768;
+    data->Y_GYRO = MPU6050_Get_Data(GYRO_YOUT_H, 2) * 1000 / 32768;
+    data->Z_GYRO = MPU6050_Get_Data(GYRO_ZOUT_H, 2) * 1000 / 32768;    
 }

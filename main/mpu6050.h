@@ -51,6 +51,9 @@ typedef struct Angle
     double X_Angle;
     double Y_Angle;
     double Z_Angle;
+    double X_GYRO;
+    double Y_GYRO;
+    double Z_GYRO;
     
 } MPU6050_Angle;
 
